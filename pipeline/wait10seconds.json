@@ -1,0 +1,25 @@
+{
+	"name": "wait10seconds",
+	"properties": {
+		"activities": [
+			{
+				"name": "Wait1",
+				"type": "Wait",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": {
+						"value": "@pipeline().parameters.paramater_10sec",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"paramater_10sec": {
+				"type": "int"
+			}
+		},
+		"annotations": []
+	}
+}
